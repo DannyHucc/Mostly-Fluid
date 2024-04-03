@@ -49,6 +49,7 @@ footer {
 DEFAULT LAYOUT (less than 600px)
 **************************************/
 .wrapper {
+    max-width: 900px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -79,5 +80,21 @@ main {
 
     aside {
         width: 30%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    main {
+        width: 60%;
+    }
+
+    nav,
+    aside {
+        width: 20%;
+    }
+
+    nav {
+        min-height: 400px;
+        line-height: 400px;
     }
 }
